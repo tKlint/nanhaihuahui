@@ -1,0 +1,106 @@
+@import '../styles/themes/default.less';
+
+@loadingSize: 20;
+
+:export {
+    loadingSize: @loadingSize
+}
+
+.MMButton_content {
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    height         : @buttonFontSize;
+    line-height    : @buttonFontSize;
+}
+
+.MMButton_loading {
+    width       : 20px;
+    height      : 20px;
+    margin-right: @spacingSize;
+}
+
+.button(@name, @buttonColor, @buttonColorActive, @buttonColorGradient) {
+    .@{name} {
+        box-sizing      : border-box;
+        background-color: @buttonColor;
+        height          : @buttonHeight;
+        font-size       : @buttonFontSize;
+        text-align      : center;
+        color           : @gray1;
+        border-radius   : @buttonBorderRadius;
+        padding         : 0 @spacingSize * 3;
+        display         : flex;
+        align-items     : center;
+        justify-content : center;
+
+        &:active {
+            background-color: @buttonColorActive;
+        }
+
+        &.MMButton__radius_none {
+            border-radius: 0;
+        }
+
+        &.MMButton__radius_large {
+            border-radius: @buttonHeight / 2;
+        }
+
+        &.MMButton__small {
+            height     : @buttonSmallHeight;
+            font-size  : 13px;
+            font-weight: bold;
+        }
+
+        &.MMButton__small.MMButton__radius_large {
+            border-radius: @buttonSmallHeight / 2;
+        }
+
+        &.MMButton__tiny {
+            font-size: @buttonTinyFontSize;
+            height   : @buttonTinyHeight;
+        }
+
+        &.MMButton__tiny.MMButton__radius_large {
+            border-radius: @buttonTinyHeight / 2;
+        }
+
+        &.MMButton__type_hollow {
+            background-color: @gray1;
+            border          : 1px solid @buttonColor;
+            color           : @buttonColor;
+
+            &:active {
+                background-color: @gray1;
+                border          : 1px solid @buttonColorActive;
+                color           : @buttonColorActive;
+            }
+        }
+
+        &.MMButton__type_gradient {
+            background: linear-gradient(90deg, @buttonColorGradient, @buttonColor);
+        }
+
+        &.MMButton__disabled {
+            opacity: .4;
+
+            &:active {
+                background-color: @buttonColor;
+            }
+        }
+
+        &.MMButton__disabled.MMButton__type_hollow {
+            &:active {
+                background-color: @gray1;
+                border          : 1px solid @buttonColor;
+            }
+        }
+
+    }
+
+}
+
+.button(MMButton, @buttonColor, @buttonColorActive, @buttonColorGradient);
+.button(MMButton__red, @buttonRedColor, @buttonRedColorActive, @buttonRedColorGradient);
+.button(MMButton__gray, @buttonGrayColor, @buttonGrayColorActive, @buttonGrayColorGradient);
+.button(MMButton__gray2, @gray5, @gray4, @buttonGrayColorGradient);

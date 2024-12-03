@@ -1,0 +1,161 @@
+@import '@wmeimob/taro-design/src/components/styles/themes/default.less';
+
+.groupBookDetailStyle {
+  height: 100%;
+  overflow: hidden;
+
+  .groupBookDetail {
+    .groupBookDetailStatus {
+      height: 50px;
+      width: 100%;
+      box-sizing: border-box;
+      padding: 0 15px;
+      background: linear-gradient(90deg, #FF7132 0%, #FC2C77 100%);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .groupBookDetailStatusLeft {
+        .groupBookDetailStatusImgWrap {
+          height: 20px;
+          display: flex;
+
+          .groupBookDetailStatusImg {
+            height: 20px;
+            width: 20px;
+            margin-right: 5px;
+
+          }
+
+          .groupBookDetailStatusHint {
+            height: 20px;
+            font-size: 14px;
+            font-family: PingFangSC-Medium, PingFang SC;
+            font-weight: 500;
+            color: #FFFFFF;
+            line-height: 20px;
+          }
+        }
+
+        .waitSuccess {
+          margin-top: 2px;
+          height: 14px;
+          font-size: 10px;
+          font-family: PingFangSC-Regular, PingFang SC;
+          font-weight: 400;
+          color: #FFFFFF;
+          line-height: 14px;
+        }
+      }
+
+      .groupBookDetailStatusTitle {
+        height: 17px;
+        font-size: 12px;
+        font-family: PingFangSC-Medium, PingFang SC;
+        font-weight: 500;
+        color: #FFFFFF;
+        line-height: 17px;
+      }
+    }
+
+
+    .groupBookGood {
+      width: 100%;
+      height: 130px;
+      background: #FFFFFF;
+      box-sizing: border-box;
+      padding: 15px;
+      margin: 10px 0;
+    }
+
+    .groupBookMember {
+      height: 70px;
+      background: #FFFFFF;
+      width: 100%;
+      box-sizing: border-box;
+      padding: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+
+      .members {
+        position: relative;
+        display: flex;
+        align-items: center;
+
+        .membersImg {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          margin-left: -5px;
+        }
+
+        .membersImg:first-child {
+          margin-left: 0;
+        }
+
+        .groupOwner {
+          width: 26px;
+          height: 14px;
+          background: linear-gradient(90deg, #FF7132 0%, #FC2C77 100%);
+          border-radius: 3px;
+          font-size: 8px;
+          font-family: PingFangSC-Semibold, PingFang SC;
+          font-weight: 600;
+          color: #FFFFFF;
+          text-align: center;
+          line-height: 14px;
+          position: absolute;
+          bottom: 0;
+          left: 7px;
+        }
+      }
+
+      .invite {
+        height: 20px;
+        font-size: 14px;
+        font-family: PingFangSC-Medium, PingFang SC;
+        font-weight: 500;
+        color: #333333;
+        line-height: 20px;
+
+        .inviteImg {
+          width: 12px;
+          height: 12px;
+          margin-left: 5px;
+        }
+      }
+    }
+
+    .orderMessage {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 15px;
+      background-color: #FFFFFF;
+      margin-bottom: 10px;
+
+      .orderMessageItem {
+        height: 20px;
+        font-size: 14px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #333333;
+        line-height: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+
+      }
+      .orderMessageItem:last-child{
+        margin-bottom: 0;
+      }
+
+      .reduceValue {
+        color: #F10215;
+      }
+    }
+
+
+  }
+}

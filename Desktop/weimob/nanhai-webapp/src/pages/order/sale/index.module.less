@@ -1,0 +1,128 @@
+@import '@wmeimob/taro-design/src/components/styles/themes/default.less';
+
+.saleStyle {
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+
+  .sale {
+    flex: 1;
+    min-height: 0;
+    overflow: hidden;
+    .sview{
+      height: 100%;
+    }
+    .saleItem {
+      min-height: 222px;
+      box-sizing: border-box;
+      padding: 15px;
+      background: #fff;
+      margin-bottom: 10px;
+
+      .saleTop {
+        height: 22px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+
+        .saleShopName {
+          height: 22px;
+          font-size: 16px;
+          font-family: PingFangSC-Medium, PingFang SC;
+          font-weight: 500;
+          color: #333333;
+          line-height: 22px;
+        }
+
+        .saleTypeName {
+          margin-top: 2px;
+          height: 20px;
+          font-size: 14px;
+          font-family: PingFangSC-Medium, PingFang SC;
+          font-weight: 500;
+          color: #333333;
+          line-height: 20px;
+        }
+      }
+
+
+
+      .orderDivier {
+        width: 100%;
+        height: 1px;
+        border: 1px solid #FAFAFA;
+        margin-bottom: 14px;
+        margin-top: 15px;
+      }
+
+      .saleHadle {
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .saleTitle {
+          height: 20px;
+          font-size: 14px;
+          font-family: PingFangSC-Medium, PingFang SC;
+          font-weight: 500;
+          color: #333333;
+          line-height: 20px;
+        }
+
+        .saleTitleElse {
+          color: #FD4F53;
+        }
+
+        .saleFill {
+          width: 105px;
+          height: 30px;
+          background: #FFFFFF;
+          border-radius: 15px;
+          border: 1px solid #333333;
+          font-size: 12px;
+          font-family: PingFangSC-Medium, PingFang SC;
+          font-weight: 500;
+          color: #333333;
+          text-align: center;
+          line-height: 30px;
+        }
+      }
+
+    }
+  }
+
+  .inputWrap {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+
+    .inputLabel {
+      height: 20px;
+      font-size: 14px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      color: #666666;
+      line-height: 20px;
+      margin-right: 5px;
+    }
+
+    .modalInput {
+      width: 210px;
+      height: 40px;
+      background: #F6F8FA;
+      border-radius: 5px;
+      box-sizing: border-box;
+      padding: 0 10px;
+      font-size: 14px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      color: #ABABAB;
+      line-height: 40px;
+    }
+  }
+
+}

@@ -1,0 +1,54 @@
+@import '../styles/themes/default.less';
+
+.MMSkuList {}
+
+.specList {
+  margin-bottom: 15px;
+
+}
+
+.title {
+  height: 20px;
+  font-size: 14px;
+  font-family: PingFangSC-Medium, PingFang SC;
+  font-weight: 500;
+  color: #333333;
+  line-height: 20px;
+  margin-bottom: 15px;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.content::after{
+  content: '';
+  width: 79px;
+}
+
+.item {
+  width: 79px;
+  height: 32px;
+  background: #F6F8FA;
+  border-radius: 18px;
+  text-align: center;
+  line-height: 32px;
+  font-size: 12px;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #666666; margin-bottom: 10px;
+}
+
+.item__disabled {
+  color: @gray4;
+  border-color: @borderColor;
+}
+
+.item__selected {
+  background: #FFF8F9;
+  border-radius: 18px;
+  border: 1px solid #FD4F53;
+  box-sizing: border-box;
+  color: #FD4F53;
+}

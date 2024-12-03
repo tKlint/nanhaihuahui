@@ -1,0 +1,87 @@
+@import '@wmeimob/taro-design/src/components/styles/themes/default.less';
+
+.rebateOrderStyle {
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+
+  .cashOrderList {
+    width: 100%;
+    flex: 1;
+    min-height: 0;
+    margin-top: 10px;
+    overflow: hidden;
+    .sview{
+      height: 100%;
+    }
+
+    .cashOrder {
+      height: 116px;
+      background: #FFFFFF;
+      width: 100%;
+      box-sizing: border-box;
+      padding: 10px 25px 15px 20px;
+      margin-bottom: 10px;
+
+      .cashOrderTop {
+        height: 20px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+
+        .cashOrderNo {
+          height: 20px;
+          font-size: 14px;
+          font-family: PingFangSC-Regular, PingFang SC;
+          font-weight: 400;
+          color: #333333;
+          line-height: 20px;
+        }
+
+        .cashStatus {
+          width: 44px;
+          height: 24px;
+          background: #FFF8F9;
+          border-radius: 12px;
+          font-size: 12px;
+          font-family: PingFangSC-Medium, PingFang SC;
+          font-weight: 500;
+          color: #FD4F53;
+          text-align: center;
+          line-height: 24px;
+        }
+
+        .intoAccount {
+          border: 1px solid #F0F0F0;
+          background-color: #fff;
+          color: #333333;
+        }
+
+        .cancellation {
+          border: 1px solid #F0F0F0;
+          background-color: #fff;
+          color: #ABABAB;
+        }
+      }
+
+      .cashOrderInfo {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 100%;
+
+        .cashOrderItem {
+          width: 50%;
+          height: 17px;
+          font-size: 12px;
+          font-family: PingFangSC-Regular, PingFang SC;
+          font-weight: 400;
+          color: #666666;
+          line-height: 17px;
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+}

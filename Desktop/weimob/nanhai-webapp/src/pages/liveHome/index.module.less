@@ -1,0 +1,261 @@
+@import '@wmeimob/taro-design/src/components/styles/themes/default.less';
+
+.liveHomeStyle {
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+
+  .liveHomeTop {
+    width: 100%;
+    height: 56px;
+    background: #FFFFFF;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 10px;
+
+    .liveHomeTopSearch {
+      width: 36px;
+      height: 36px;
+      background: #F6F8FA;
+      border-radius: 20px;
+      opacity: 0.7;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 14px;
+      flex-wrap: nowrap;
+
+      .icon {
+        width: 14px;
+        height: 14px;
+      }
+    }
+    .searchWrap{
+      flex: 1;
+      min-width: 0;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+    .searchTxt {
+      padding: 0 15px;
+      height: 36px;
+      font-size: 14px;
+      font-family: PingFangSC-Medium, PingFang SC;
+      font-weight: 500;
+      color: #333333;
+      line-height: 36px;
+      display: inline-block;
+      position: relative;
+      .timg{
+        position: absolute;
+        width: 14px;
+        height: 6px;
+        bottom: 0px;
+        left: calc(50% - 7px);
+    }
+    }
+  }
+
+  .liveHomeWrap {
+    flex: 1;
+    min-height: 0;
+    overflow: hidden;
+
+    .sview {
+      height: 100%;
+
+      .liveHome {
+        box-sizing: border-box;
+        padding: 15px;
+
+        .liveHomeAd {
+          width: 100%;
+          height: 114px;
+          border-radius: 10%;
+          background-color: #fff;
+          margin-bottom: 15px;
+        }
+
+        .liveList {
+          box-sizing: border-box;
+          // padding: 15px;
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          padding-top: 0;
+        }
+
+        .currentLive {
+          width: 100%;
+          height: 250px;
+          background: #ccc;
+          border-radius: 15px;
+          box-sizing: border-box;
+          padding: 10px;
+          margin-bottom: 15px;
+
+          .liveTop {
+            height: 24px;
+            display: flex;
+            margin-bottom: 161px;
+
+            .liveTitle {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              box-sizing: border-box;
+              padding: 0 5px;
+              width: 57px;
+              height: 24px;
+              background: linear-gradient(90deg, #FF7132 0%, #FC2C77 100%);
+              border-radius: 100px 0px 0px 100px;
+              font-size: 12px;
+              font-family: PingFangSC-Medium, PingFang SC;
+              font-weight: 500;
+              color: #FFFFFF;
+              line-height: 24px;
+
+              .liveImg {
+                width: 8px;
+                height: 8px;
+                margin-right: 3px;
+              }
+            }
+
+            .liveCount {
+              width: 81px;
+              height: 24px;
+              background: #000000;
+              border-radius: 0px 100px 100px 0px;
+              opacity: 0.5;
+              font-size: 12px;
+              font-family: PingFangSC-Medium, PingFang SC;
+              font-weight: 500;
+              color: #FFFFFF;
+              text-align: center;
+              line-height: 24px;
+            }
+          }
+
+
+
+          .shopInfo {
+            height: 40px;
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+
+            .liveShopImg {
+              width: 40px;
+              height: 40px;
+              border-radius: 50%;
+              margin-right: 10px;
+            }
+
+            .liveShopInfo {
+              .liveShopName {
+                height: 20px;
+                font-size: 14px;
+                font-family: PingFangSC-Medium, PingFang SC;
+                font-weight: 500;
+                color: #FFFFFF;
+                line-height: 20px;
+                margin-bottom: 3px;
+
+                // .zhibao {
+                //   margin-left: 5px;
+                //   width: 10px;
+                //   height: 12px;
+                // }
+              }
+
+              .liveShopAttention {
+                height: 17px;
+                font-size: 12px;
+                font-family: PingFangSC-Regular, PingFang SC;
+                font-weight: 400;
+                color: #FFFFFF;
+                line-height: 17px;
+              }
+            }
+
+          }
+        }
+
+        .attentionLive {
+          width: 165px;
+          height: 200px;
+          background: #D8D8D8;
+          border-radius: 15px;
+          box-sizing: border-box;
+          padding: 10px;
+          margin-bottom: 16px;
+
+          .attentionLiveStatus {
+            width: fit-content;
+            padding: 5px 10px;
+            height: 24px;
+            background: linear-gradient(90deg, #FF7132 0%, #FC2C77 100%);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            font-size: 12px;
+            font-family: PingFangSC-Medium, PingFang SC;
+            font-weight: 500;
+            color: #FFFFFF;
+            margin-bottom: 95px;
+
+            .attentionLiveStatusImg {
+              width: 14px;
+              height: 14px;
+              margin-right: 5px;
+            }
+          }
+
+          .attentionLiveTime {
+            width: fit-content;
+            height: 16px;
+            font-size: 11px;
+            font-family: PingFangSC-Medium, PingFang SC;
+            font-weight: 500;
+            color: #FFFFFF;
+            line-height: 16px;
+            margin-bottom: 5px;
+          }
+
+          .attentionLiveHandle {
+            display: flex;
+            justify-content: space-between;
+
+            .attentionLiveTitle {
+              width: 85px;
+              height: 40px;
+              font-size: 14px;
+              font-family: PingFangSC-Semibold, PingFang SC;
+              font-weight: 600;
+              color: #FFFFFF;
+              line-height: 20px;
+            }
+
+            .attentionLiveBtn {
+              width: 44px;
+              height: 24px;
+              background: rgba(0, 0, 0, 0.25);
+              border-radius: 15px;
+              border: 1px solid #FFFFFF;
+              font-size: 11px;
+              font-family: PingFangSC-Medium, PingFang SC;
+              font-weight: 500;
+              color: #FFFFFF;
+              text-align: center;
+              line-height: 24px;
+              margin-top: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

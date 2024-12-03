@@ -1,0 +1,211 @@
+@import '@wmeimob/taro-design/src/components/styles/themes/default.less';
+
+.myEvaluationStyle {
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+
+  .myEvaluation {
+    flex: 1;
+    min-height: 0;
+    overflow: hidden;
+    .sview{
+      height: 100%;
+    }
+    .evaluation {
+      margin-top: 10px;
+      width: 100%;
+      box-sizing: border-box;
+      padding: 15px;
+      background-color: #fff;
+
+      .evaluationTop {
+        height: 50px;
+        width: 100%;
+        display: flex;
+        margin-bottom: 22px;
+
+        .evaluationGoodImg {
+          width: 50px;
+          height: 50px;
+          margin-right: 10px;
+          border-radius: 10px;
+        }
+
+        .evaluationGood {
+          flex: 1;
+
+          .evaluationGoodName {
+            height: 20px;
+            font-size: 14px;
+            font-family: PingFangSC-Regular, PingFang SC;
+            font-weight: 400;
+            color: #333333;
+            line-height: 20px;
+            margin-bottom: 10px;
+          }
+
+          .evaluationGoodSku {
+            height: 17px;
+            font-size: 12px;
+            font-family: PingFangSC-Regular, PingFang SC;
+            font-weight: 400;
+            color: #ABABAB;
+            line-height: 17px;
+          }
+        }
+      }
+
+      .evaluationGeneral {
+        display: flex;
+        height: 20px;
+        font-size: 14px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #333333;
+        line-height: 20px;
+        margin-bottom: 15px;
+
+        .evaluationGeneralTitle {
+          width: 70px;
+        }
+
+      }
+
+      .evaluationTxt {
+        min-height: 20px;
+        font-size: 14px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #666666;
+        line-height: 20px;
+        margin-bottom: 15px;
+      }
+
+      .evaluationImgs {
+        height: 113px;
+        margin-bottom: 15px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        .evaluationImg {
+          width: 113px;
+          height: 113px;
+          border-radius: 10px;
+        }
+      }
+
+      // .evaluationImgs:after {
+      //   content: '';
+      //   width: 113px;
+      // }
+      .evaluationHandle {
+        display: flex;
+        height: 17px;
+        justify-content: space-between;
+
+        .evaluationTime {
+          height: 17px;
+          font-size: 12px;
+          font-family: PingFangSC-Regular, PingFang SC;
+          font-weight: 400;
+          color: #ABABAB;
+          line-height: 17px;
+        }
+
+        .evaluationDel {
+          width: 14px;
+          height: 14px;
+          margin-top: 2px;
+        }
+
+      }
+    }
+
+    .evaluationShop {
+      width: 100%;
+      margin-top: 10px;
+      box-sizing: border-box;
+      padding: 15px;
+      height: 170px;
+      background-color: #fff;
+
+      .evaluationShopTop {
+        height: 40px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+
+        .evaluationShopImg {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          margin-right: 10px;
+        }
+
+        .evaluationShopInfo {
+          .evaluationShopName {
+            height: 20px;
+            font-size: 14px;
+            font-family: PingFangSC-Medium, PingFang SC;
+            font-weight: 500;
+            color: #333333;
+            line-height: 20px;
+            margin-bottom: 3px;
+
+            .zhibao {
+              margin-left: 5px;
+              width: 10px;
+              height: 12px;
+            }
+          }
+
+          .evaluationShopAttention {
+            height: 17px;
+            font-size: 12px;
+            font-family: PingFangSC-Regular, PingFang SC;
+            font-weight: 400;
+            color: #999999;
+            line-height: 17px;
+          }
+        }
+
+        .evaluationShopDel {
+          width: 14px;
+          height: 14px;
+          margin-left: auto;
+        }
+
+      }
+
+      .evaluationShopItem {
+        height: 20px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+
+        .evaluationShopLabel {
+          height: 20px;
+          font-size: 14px;
+          font-family: PingFangSC-Regular, PingFang SC;
+          font-weight: 400;
+          color: #333333;
+          line-height: 20px;
+          margin-right: 15px;
+        }
+
+        .evaluationGeneralStars {
+          width: 15px;
+          height: 15px;
+          margin-right: 5px;
+        }
+      }
+
+      .evaluationShopItem:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

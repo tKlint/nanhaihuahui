@@ -1,0 +1,158 @@
+@import '@wmeimob/taro-design/src/components/styles/themes/default.less';
+
+.messageCenterStyle {
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+
+  .messageCenterTab {
+    height: 117px;
+    background: #FFFFFF;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 43px;
+    margin-bottom: 10px;
+
+    .messageCenterTabItem {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+      .messageCenterTabItemImg {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 10px;
+      }
+
+      .messageCenterTabItemTxt {
+        width: fit-content;
+        height: 17px;
+        font-size: 12px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #666666;
+        line-height: 17px;
+      }
+    }
+  }
+
+  .messageCenter {
+    flex: 1;
+    overflow: hidden;
+    min-height: 0;
+    .sview{
+      height: 100%;
+    }
+    .messageList {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 10px 15px;
+      background: #FFFFFF;
+
+      .message {
+        width: 100%;
+        height: 73px;
+        display: flex;
+        // align-items: center;
+        box-sizing: border-box;
+        padding-top: 10px;
+
+        .messageImg {
+          width: 44px;
+          height: 44px;
+          border-radius: 50%;
+          margin-right: 10px;
+        }
+
+        .messageCont {
+          flex: 1;
+          height: 100%;
+          border-bottom: 1px solid #F6F8FA;
+
+          .messageContTop {
+            height: 20px;
+            display: flex;
+            justify-content: space-between;
+            margin: 0 0 7px 0;
+
+            .messageName {
+              height: 20px;
+              font-size: 14px;
+              font-family: PingFangSC-Medium, PingFang SC;
+              font-weight: 500;
+              color: #333333;
+              line-height: 20px;
+            }
+
+            .messageTime {
+              height: 17px;
+              font-size: 12px;
+              font-family: PingFangSC-Regular, PingFang SC;
+              font-weight: 400;
+              color: #ABABAB;
+              line-height: 17px;
+              margin-top: 2px;
+            }
+          }
+
+          .messageContBottom {
+            height: 17px;
+            display: flex;
+            justify-content: space-between;
+
+            .messageNews {
+              height: 17px;
+              font-size: 12px;
+              font-family: PingFangSC-Regular, PingFang SC;
+              font-weight: 400;
+              color: #999999;
+              line-height: 17px;
+            }
+
+            .unread {
+              width: 10px;
+              height: 10px;
+              background: #FD4F53;
+              margin-top: 5px;
+              border-radius: 50%;
+            }
+          }
+        }
+      }
+
+      .message:last-child {
+        .messageCont {
+          border-bottom: none;
+        }
+      }
+    }
+
+    .noNews {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .noNewsImg {
+        margin-top: 126px;
+        width: 160px;
+        height: 160px;
+        margin-bottom: 10px;
+      }
+
+      .noNewsHint {
+        height: 20px;
+        font-size: 14px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #999999;
+        line-height: 20px;
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
+}

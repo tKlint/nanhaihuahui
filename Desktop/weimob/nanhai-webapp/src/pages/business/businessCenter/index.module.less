@@ -1,0 +1,178 @@
+@import '@wmeimob/taro-design/src/components/styles/themes/default.less';
+
+.businessCenterStyle {
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+
+  .businessCheckInfo {
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(90deg, #FF7132 0%, #FC2C77 100%);
+    line-height: 50px;
+    text-align: center;
+    font-size: 14px;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 500;
+    color: #FFFFFF;
+  }
+  .businessCheckInfoElse{
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 0 15px;
+  }
+
+  .businessCommonInfo {
+    flex: 1;
+    min-height: 0;
+
+    .businessShop {
+      width: 100%;
+      height: 70px;
+      background: #FFFFFF;
+      box-sizing: border-box;
+      padding: 15px;
+      display: flex;
+      align-items: center;
+      margin: 10px 0;
+
+      .businessShopLogo {
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        margin-right: 10px;
+      }
+
+      .businessShopName {
+        height: 20px;
+        font-size: 14px;
+        font-family: PingFangSC-Medium, PingFang SC;
+        font-weight: 500;
+        color: #333333;
+        line-height: 20px;
+      }
+    }
+
+    .businessCommon {
+      width: 100%;
+      height: auto;
+      background: #FFFFFF;
+      box-sizing: border-box;
+      padding: 15px;
+
+      .businessCommonItem {
+        min-height: 20px;
+        display: flex;
+        margin-bottom: 20px;
+        font-size: 14px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #333333;
+        line-height: 20px;
+        justify-content: space-between;
+
+        .businessCommonItemLabel {
+          height: 20px;
+        }
+
+        .businessCommonItemCont {
+          width: 220px;
+          min-height: 20px;
+          text-align: right;
+
+        }
+
+        .photo {
+          width: 70px;
+          height: 48px;
+          margin: 11px 0;
+        }
+      }
+
+      .businessCommonItem:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    .businessInvite {
+      width: 100%;
+
+      .inviteHint {
+        height: 20px;
+        font-size: 14px;
+        font-family: PingFangSC-Medium, PingFang SC;
+        font-weight: 500;
+        color: #333333;
+        line-height: 20px;
+        box-sizing: border-box;
+        padding-left: 16px;
+        margin: 15px 0;
+      }
+
+      .inviteMember {
+        width: 100%;
+        height: 70px;
+        background: #FFFFFF;
+        box-sizing: border-box;
+        padding: 15px;
+        display: flex;
+
+        .inviteMemberImg {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          margin-right: 10px;
+        }
+
+        .inviteMemberInfo {
+          .inviteMemberName {
+            height: 20px;
+            font-size: 14px;
+            font-family: PingFangSC-Medium, PingFang SC;
+            font-weight: 500;
+            color: #333333;
+            line-height: 20px;
+            margin-bottom: 3px;
+          }
+
+          .inviteMemberTel {
+            height: 17px;
+            font-size: 12px;
+            font-family: PingFangSC-Regular, PingFang SC;
+            font-weight: 400;
+            color: #ABABAB;
+            line-height: 17px;
+          }
+        }
+      }
+    }
+  }
+
+  .businessEdit {
+    width: 92%;
+    margin-left: 4%;
+    height: 44px;
+    background: #FFFFFF;
+    border-radius: 22px;
+    border: 1px solid #333333;
+    font-size: 14px;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 500;
+    color: #333333;
+    text-align: center;
+    line-height: 44px;
+  }
+  .businessEditHint{
+    height: 20px;
+    font-size: 14px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #ABABAB;
+    line-height: 20px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 70px;
+  }
+}

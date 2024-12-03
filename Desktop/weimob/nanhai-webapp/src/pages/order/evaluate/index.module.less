@@ -1,0 +1,104 @@
+@import '@wmeimob/taro-design/src/components/styles/themes/default.less';
+
+.evaluateStyle {
+  height: 100%;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+
+  .evaluate {
+
+    flex: 1;
+
+    .evaluateWrap {
+      box-sizing: border-box;
+      padding: 15px;
+      width: 100%;
+      background: #fff;
+    }
+
+    .evaluateGood {
+      display: flex;
+      height: 50px;
+      margin-bottom: 20px;
+
+      .evaluateGoodImg {
+        width: 50px;
+        height: 50px;
+        border-radius: 10px;
+        margin-right: 15px;
+      }
+
+      .evaluateGoodName {
+        width: 280px;
+        height: 42px;
+        font-size: 15px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #222222;
+        line-height: 21px;
+        text-overflow: -o-ellipsis-lastline;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+      }
+    }
+
+    .evaluateOverAll {
+      display: flex;
+      height: 20px;
+      margin-bottom: 20px;
+
+      .evaluateTitle {
+        width: 70px;
+        height: 20px;
+        font-size: 14px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #333333;
+        line-height: 20px;
+      }
+    }
+
+    .evaluateTextArea {
+      width: 100%;
+      height: 90px;
+      border-radius: 5px;
+      border: 1px solid #EEEEEE;
+      box-sizing: border-box;
+      padding: 15px;
+      font-size: 14px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      color: #999999;
+      line-height: 20px;
+      margin-bottom: 15px;
+    }
+
+    .anonymity {
+      margin-top: 20px;
+      height: 20px;
+      display: flex;
+      align-items: center;
+
+      .anonymityImg {
+        width: 16px;
+        height: 16px;
+        margin-right: 5px;
+      }
+
+      .anonymityHint {
+        height: 20px;
+        font-size: 14px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #ABABAB;
+        line-height: 20px;
+      }
+    }
+  }
+
+
+}

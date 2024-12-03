@@ -1,0 +1,134 @@
+@import '@wmeimob/taro-design/src/components/styles/themes/default.less';
+
+page {
+  background: #FFF;
+}
+
+.indexStyle {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  height: 100%;
+  .top {
+    display: flex;
+    align-items: center;
+    padding-top: 17px;
+    background: #FFF;
+    padding-bottom: 10px;
+
+    .searchBtn {
+      width: 60px;
+      margin-left: 21px;
+      font-size: 14px;
+      font-family: PingFangSC-Medium, PingFang SC;
+      font-weight: 500;
+      color: #333333;
+    }
+
+    .topSearch {
+      flex: 1;
+      margin-left: 17px;
+
+      .mallSearch {
+        width: 100%;
+        height: 36px;
+        background: #F6F8FA;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        box-sizing: border-box;
+        padding: 0 15px;
+
+        .mallSearchIcon {
+          width: 14px;
+          height: 14px;
+          margin-right: 8px;
+        }
+
+        .mallSearchInput {
+          width: 100%;
+          height: 18px;
+          font-size: 13px;
+          font-family: PingFangSC-Regular, PingFang SC;
+          font-weight: 400;
+          color: #ABABAB;
+          line-height: 18px;
+        }
+
+      }
+    }
+  }
+
+
+
+
+  .wrapper {
+    border-top: solid #F6F8FA 10px;
+    min-height: 1;
+    flex: 1;
+    overflow: hidden;
+    .sview{
+      height: 100%;
+    }
+    .goodslist {
+      padding: 15px 15px 0 15px;
+
+      .gitem {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+
+        .limg {
+          width: 100px;
+          height: 100px;
+          border-radius: 10px;
+        }
+
+        .rdesc {
+          flex: 1;
+          margin-left: 10px;
+
+          .title {
+            font-size: 14px;
+            font-family: PingFangSC-Medium, PingFang SC;
+            font-weight: 500;
+            color: #333333;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+          }
+
+          .store {
+            font-size: 12px;
+            font-family: PingFangSC-Regular, PingFang SC;
+            font-weight: 400;
+            color: #666666;
+            margin: 9px 0 17px 0;
+          }
+
+          .price {
+            display: flex;
+            align-items: flex-end;
+
+            .p_price {
+              font-size: 14px;
+              font-family: HarmonyOS_Sans_Condensed_Medium;
+              color: #FD4F53;
+            }
+
+            .t_price {
+              font-size: 12px;
+              font-family: HarmonyOS_Sans_Condensed_Medium;
+              color: #ABABAB;
+              margin-left: 10px;
+              text-decoration: line-through;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}

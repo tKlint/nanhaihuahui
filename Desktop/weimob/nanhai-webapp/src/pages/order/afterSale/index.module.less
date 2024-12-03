@@ -1,0 +1,157 @@
+@import '@wmeimob/taro-design/src/components/styles/themes/default.less';
+
+.afterSaleStyle {
+  height: 100%;
+
+  .afterSale {
+    box-sizing: border-box;
+    padding: 10px 0;
+
+    .afterSaleOrder {
+      width: 100%;
+      background: #FFFFFF;
+      min-height: 140px;
+      box-sizing: border-box;
+      padding: 15px;
+      margin-bottom: 10px;
+
+      .orderShop {
+        height: 30px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+
+        .orderShopImg {
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+        }
+
+        .orderShopName {
+          width: fit-content;
+          margin-left: 5px;
+          font-size: 16px;
+          font-family: PingFangSC-Medium, PingFang SC;
+          font-weight: 500;
+          color: #333333;
+        }
+
+        .concatShop {
+          width: 72px;
+          height: 28px;
+          background: linear-gradient(90deg, #FF7132 0%, #FC2C77 100%);
+          border-radius: 14px;
+          text-align: center;
+          line-height: 28px;
+          font-size: 12px;
+          font-family: PingFangSC-Medium, PingFang SC;
+          font-weight: 500;
+          color: #FFFFFF;
+          margin-left: auto;
+        }
+      }
+
+      .orderGood {
+        margin-top: 15px;
+        width: 100%;
+        min-height: 100px;
+        display: flex;
+        margin-bottom: 15px;
+
+        .orderGoodImg {
+          width: 100px;
+          height: 100px;
+          margin-right: 10px;
+        }
+
+        .orderGoodInfo {
+          .orderGoodName {
+            width: 235px;
+            height: 42px;
+            font-size: 15px;
+            font-family: PingFangSC-Regular, PingFang SC;
+            font-weight: 400;
+            color: #222222;
+            line-height: 21px;
+            margin-bottom: 10px;
+            text-overflow: -o-ellipsis-lastline;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+          }
+
+          .orderGoodSpec {
+            height: 17px;
+            font-size: 12px;
+            font-family: PingFangSC-Regular, PingFang SC;
+            font-weight: 400;
+            color: #999999;
+            line-height: 17px;
+            margin-bottom: 13px;
+          }
+
+          .orderGoodPc {
+            height: 17px;
+            display: flex;
+            justify-content: space-between;
+
+            .orderGoodPrice {
+              height: 17px;
+              font-size: 12px;
+              font-family: PingFangSC-Regular, PingFang SC;
+              font-weight: 400;
+              color: #999999;
+              line-height: 17px;
+            }
+
+            .orderGoodCount {
+              height: 17px;
+              font-size: 12px;
+              font-family: PingFangSC-Regular, PingFang SC;
+              font-weight: 400;
+              color: #333333;
+              line-height: 17px;
+            }
+          }
+        }
+      }
+    }
+
+    .afterSaleType {
+      width: 100%;
+      height: 80px;
+      background: #FFFFFF;
+      box-sizing: border-box;
+      padding: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .afterSaleTypeName {
+        height: 20px;
+        font-size: 14px;
+        font-family: PingFangSC-Medium, PingFang SC;
+        font-weight: 500;
+        color: #333333;
+        line-height: 20px;
+        margin-bottom: 10px;
+      }
+
+      .afterSaleTypeHint {
+        height: 20px;
+        font-size: 14px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #999999;
+        line-height: 20px;
+      }
+
+      .afterSaleTypeTo {
+        width: 6px;
+        height: 10px;
+      }
+    }
+  }
+}

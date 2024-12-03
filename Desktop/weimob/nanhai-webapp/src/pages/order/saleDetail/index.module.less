@@ -1,0 +1,185 @@
+@import '@wmeimob/taro-design/src/components/styles/themes/default.less';
+
+.saleDetailStyle {
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+
+  .saleDetail {
+    flex: 1;
+    min-height: 0;
+
+    .saleStatus {
+      width: 100%;
+      height: 50px;
+      background: linear-gradient(90deg, #FF7132 0%, #FC2C77 100%);
+      display: flex;
+      align-items: center;
+      box-sizing: border-box;
+      padding: 0 15px;
+      margin-bottom: 10px;
+
+      .saleStatusIcon {
+        height: 20px;
+        width: 20px;
+        margin-right: 10px;
+      }
+
+      .saleStatusTitle {
+        font-size: 14px;
+        font-family: PingFangSC-Medium, PingFang SC;
+        font-weight: 500;
+        color: #FFFFFF;
+      }
+
+      .saleStatusHint {
+        margin-left: auto;
+        font-size: 12px;
+        font-family: PingFangSC-Medium, PingFang SC;
+        font-weight: 500;
+        color: #FFFFFF;
+      }
+
+    }
+
+    .saleStep {
+      width: 100%;
+      height: 138px;
+      background: #FFFFFF;
+      box-sizing: border-box;
+      padding: 15px;
+      margin-bottom: 10px;
+
+      .saleRefund {
+        height: 20px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 25px;
+
+        .refundTitle {
+          height: 20px;
+          font-size: 14px;
+          font-family: PingFangSC-Medium, PingFang SC;
+          font-weight: 500;
+          color: #333333;
+          line-height: 20px;
+        }
+
+        .refundAmount {
+          height: 20px;
+          font-size: 14px;
+          font-family: HarmonyOS_Sans_Condensed_Medium;
+          color: #F10215;
+          line-height: 17px;
+        }
+      }
+
+      .refundStep {
+        box-sizing: border-box;
+        justify-content: center;
+        display: flex;
+
+        .refundStepBox {
+          width: 48px;
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+
+          .refundStepImg {
+            width: 36px;
+            height: 36px;
+            margin-bottom: 10px;
+          }
+
+          .refundStepTitle {
+            height: 17px;
+            font-size: 12px;
+            font-family: PingFangSC-Regular, PingFang SC;
+            font-weight: 400;
+            color: #333333;
+            line-height: 17px;
+          }
+        }
+
+        .arrows {
+          height: 36px;
+          color: #999;
+          box-sizing: border-box;
+          line-height: 36px;
+          margin: 0 7px 0 7px;
+        }
+
+        .arrowsCurrent {
+          color: #FD4F53;
+        }
+      }
+
+
+
+
+
+
+    }
+
+    .closeHint {
+      height: 60px;
+      font-size: 14px;
+      font-family: PingFangSC-Medium, PingFang SC;
+      font-weight: 500;
+      color: #333333;
+      text-align: center;
+      line-height: 60px;
+      margin-bottom: 10px;
+      background-color: #fff;
+    }
+
+    .refundGood {
+      height: 167px;
+      background: #FFFFFF;
+      width: 100%;
+      box-sizing: border-box;
+      padding: 15px;
+      margin-bottom: 10px;
+
+      .refundShopName {
+        height: 22px;
+        font-size: 16px;
+        font-family: PingFangSC-Medium, PingFang SC;
+        font-weight: 500;
+        color: #333333;
+        line-height: 22px;
+        margin-bottom: 15px;
+      }
+
+
+    }
+
+    .refundInfo {
+      height: 170px;
+      width: 100%;
+      box-sizing: border-box;
+      padding: 15px;
+      background: #FFFFFF;
+
+      .refundItem {
+        height: 20px;
+        display: flex;
+        justify-content: space-between;
+        font-size: 14px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #333333;
+        line-height: 20px;
+        margin-bottom: 20px;
+      }
+
+      .refundItem:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+
+}

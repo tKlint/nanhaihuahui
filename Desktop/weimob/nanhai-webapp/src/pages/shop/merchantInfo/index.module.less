@@ -1,0 +1,290 @@
+@import '@wmeimob/taro-design/src/components/styles/themes/default.less';
+
+.merchantInfoStyle {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .merchantInfo {
+    .merchant {
+      width: 100%;
+      height: 133px;
+      background: #FFFFFF;
+      box-sizing: border-box;
+      padding: 15px;
+      padding-right: 12px;
+      margin-bottom: 10px;
+
+      .shopDetailTop {
+        width: 100%;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+
+        .shopIcon {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          margin-right: 10px;
+        }
+
+        .attentionShopInfo {
+          width: 210px;
+
+          .attentionShopName {
+            width: fit-content;
+            height: 20px;
+            font-size: 14px;
+            font-family: PingFangSC-Medium, PingFang SC;
+            font-weight: 500;
+            color: #333333;
+            line-height: 20px;
+            margin-bottom: 3px;
+
+            .zhibao {
+              width: 10px;
+              height: 12px;
+              margin-left: 5px;
+            }
+          }
+
+          .attentionShopInformation {
+            display: flex;
+            align-items: center;
+            height: 17px;
+
+            .attentionCount {
+              width: fit-content;
+              height: 17px;
+              font-size: 12px;
+              font-family: PingFangSC-Regular, PingFang SC;
+              font-weight: 400;
+              color: #999999;
+              line-height: 17px;
+            }
+          }
+        }
+
+        .shopAttention {
+          width: 54px;
+          height: 28px;
+          background: linear-gradient(90deg, #FF7132 0%, #FC2C77 100%);
+          border-radius: 14px;
+          text-align: center;
+          line-height: 28px;
+          font-size: 12px;
+          font-family: PingFangSC-Medium, PingFang SC;
+          font-weight: 500;
+          color: #FFFFFF;
+          margin-left: auto;
+          margin-right: 3px;
+        }
+        .attentioned {
+          border: 1px solid #DDDDDD;
+          font-size: 12px;
+          background: #fff;
+          color: #333333;
+        }
+      }
+
+
+
+      .experienceHint {
+        height: 17px;
+        font-size: 12px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #ABABAB;
+        line-height: 17px;
+      }
+    }
+
+    .experience {
+      height: 20px;
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      color: #333333;
+      margin-bottom: 10px;
+
+      .stars {
+        margin-right: 3px;
+        width: 15px;
+        height: 15px;
+      }
+
+      .stars:first-child {
+        margin-left: 10px;
+      }
+    }
+
+    .merchantGrade {
+      width: 100%;
+      height: 120px;
+      background: #FFFFFF;
+      box-sizing: border-box;
+      padding: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+
+      .merchantGradeRight {
+        width: 75px;
+        height: 32px;
+        background: linear-gradient(90deg, #FF7132 0%, #FC2C77 100%);
+        border-radius: 16px;
+        text-align: center;
+        line-height: 32px;
+        font-size: 12px;
+        font-family: PingFangSC-Medium, PingFang SC;
+        font-weight: 500;
+        color: #FFFFFF;
+      }
+
+      .merchantGradeLeft {
+        .experience {
+          .stars:first-child {
+            margin-left: 15px;
+          }
+        }
+
+        .experience {
+          margin-bottom: 15px;
+        }
+
+        .experience:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    .basicInfo {
+      width: 100%;
+      height: 217px;
+      background: #FFFFFF;
+      box-sizing: border-box;
+      padding: 15px;
+      padding-right: 13px;
+
+      .title {
+        height: 22px;
+        font-size: 16px;
+        font-family: PingFangSC-Medium, PingFang SC;
+        font-weight: 500;
+        color: #333333;
+        line-height: 22px;
+        margin-bottom: 20px;
+      }
+
+      .basic {
+        display: flex;
+        justify-content: space-between;
+        height: 20px;
+        font-size: 14px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #333333;
+        line-height: 20px;
+        margin-bottom: 20px;
+
+        .basicLabel {
+          height: 20px;
+        }
+
+        .basicValue {
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+
+          .extra {
+            width: 12px;
+            height: 12px;
+            margin-left: 5px;
+
+          }
+
+          .zhibao {
+            height: 16px;
+            width: 14px;
+          }
+        }
+
+        .basicValueElse {
+          color: #999999;
+        }
+      }
+
+      .basic:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .popWrap {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    min-height: 280px;
+    background: #FFFFFF;
+    border-radius: 15px 15px 0px 0px;
+    box-sizing: border-box;
+    padding: 20px 15px;
+
+    .popTop {
+      height: 22px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+
+      .popTitle {
+        height: 22px;
+        font-size: 16px;
+        font-family: PingFangSC-Medium, PingFang SC;
+        font-weight: 500;
+        color: #333333;
+        line-height: 22px;
+      }
+
+      .popWrapClose {
+        width: 14px;
+        height: 14px;
+      }
+    }
+
+    .evaluateOverAll {
+      display: flex;
+      height: 20px;
+      margin-bottom: 18px;
+
+      .evaluateTitle {
+        width: 70px;
+        height: 20px;
+        font-size: 14px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #333333;
+        line-height: 20px;
+      }
+    }
+
+    .popHandle {
+      width: 100%;
+      height: 44px;
+      background: linear-gradient(90deg, #FF7132 0%, #FC2C77 100%);
+      border-radius: 22px;
+      margin-top: 41px;
+      text-align: center;
+      line-height: 44px;
+      font-size: 14px;
+      font-family: PingFangSC-Medium, PingFang SC;
+      font-weight: 500;
+      color: #FFFFFF;
+    }
+  }
+}

@@ -1,0 +1,61 @@
+@import '@wmeimob/taro-design/src/components/styles/themes/default.less';
+
+.sharePageStyle {
+  height: 240px;
+  background: #FFFFFF;
+  border-radius: 15px 15px 0px 0px;
+  background: #FFFFFF;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 66px;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .shareHandleTitle {
+    width: 100%;
+    text-align: center;
+    height: 30px;
+    font-size: 22px;
+    font-family: PingFangSC-Semibold, PingFang SC;
+    font-weight: 600;
+    color: #333333;
+    line-height: 30px;
+    margin-bottom: 15px;
+  }
+
+  .shareWrap{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    .shareWx {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+      .shareWxImg {
+        width: 48px;
+        height: 48px;
+        margin-bottom: 15px;
+      }
+
+      .shareWxTxt {
+        height: 17px;
+        font-size: 12px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #333333;
+        line-height: 17px;
+      }
+    }
+  }
+  .close{
+    width: 13px;
+    height: 13px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+
+}

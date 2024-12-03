@@ -1,0 +1,539 @@
+@import '@wmeimob/taro-design/src/components/styles/themes/default.less';
+
+.auctionGoodDetailStyle {
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+
+  .auctionGoodDetailWrap {
+    min-height: 0;
+    flex: 1;
+    overflow: hidden;
+
+    .sview {
+      height: 100%;
+
+      .auctionGoodDetail {
+        box-sizing: border-box;
+        padding: 15px;
+        background: #fff;
+        display: flex;
+        margin-bottom: 15px;
+
+        .auctionGoodShop {
+          width: 60px;
+          margin-right: 15px;
+
+          .shopImg {
+            width: 60px;
+            height: 60px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+          }
+
+          .attention {
+            width: 60px;
+            height: 28px;
+            background: linear-gradient(90deg, #FF7132 0%, #FC2C77 100%);
+            border-radius: 16px;
+            text-align: center;
+            line-height: 20px;
+            font-size: 12px;
+            font-family: PingFangSC-Medium, PingFang SC;
+            font-weight: 500;
+            color: #FFFFFF;
+            margin-bottom: 15px;
+          }
+
+          .privateMessage {
+            border: 1px solid #DDDDDD;
+            background: #fff;
+            color: #333333;
+          }
+        }
+
+        .auctionGood {
+          flex: 1;
+
+          .attentionGoodName {
+            height: 25px;
+            font-size: 18px;
+            font-family: PingFangSC-Medium, PingFang SC;
+            font-weight: 500;
+            color: #333333;
+            line-height: 25px;
+            margin-bottom: 5px;
+          }
+
+          .auctionGoodBasic {
+            width: 267px;
+            height: 40px;
+            box-sizing: border-box;
+            border-bottom: 1px dashed #E7E7E7;
+            font-size: 14px;
+            font-family: PingFangSC-Regular, PingFang SC;
+            font-weight: 400;
+            color: #666666;
+            line-height: 40px;
+          }
+
+          .auctionGoodIntro {
+            margin-top: 20px;
+            margin-bottom: 6px;
+
+            .introTitle {
+              height: 22px;
+              font-size: 16px;
+              font-family: PingFangSC-Medium, PingFang SC;
+              font-weight: 500;
+              color: #333333;
+              line-height: 22px;
+              margin-bottom: 14px;
+            }
+
+            .introCont {
+              margin-bottom: 40px;
+            }
+
+            .introImgs {
+              display: flex;
+              justify-content: space-between;
+              flex-wrap: wrap;
+
+              .img {
+                width: 85px;
+                height: 85px;
+                border-radius: 10px;
+                margin-bottom: 7px;
+              }
+            }
+
+            .introImgs:after {
+              content: '';
+              width: 85px;
+            }
+          }
+
+          .attentionStatus {
+            width: 267px;
+            height: 30px;
+            background: #FFF8F9;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            padding: 0 10px 0 8px;
+            margin-bottom: 11px;
+
+            .attentionImg {
+              width: 12px;
+              height: 12px;
+              margin-right: 4px;
+            }
+
+            .attentionStatusTitle {
+              height: 17px;
+              font-size: 12px;
+              font-family: PingFangSC-Regular, PingFang SC;
+              font-weight: 400;
+              color: #FD4F53;
+              line-height: 17px;
+            }
+
+            .attentionStatusDesc {
+              height: 17px;
+              font-size: 12px;
+              font-family: PingFangSC-Regular, PingFang SC;
+              font-weight: 400;
+              color: #FD4F53;
+              line-height: 17px;
+              margin-left: auto;
+            }
+          }
+
+          .attentionInfo {
+            margin-bottom: 10px;
+            height: 17px;
+            font-size: 12px;
+            font-family: PingFangSC-Regular, PingFang SC;
+            font-weight: 400;
+            color: #333333;
+            line-height: 17px;
+          }
+
+          .attentionInfo:last-child {
+            margin-bottom: 21px;
+          }
+
+          .attentionParticipant {
+            width: 270px;
+            height: 80px;
+            background: #F6F7F9;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+
+            .headImg {
+              margin: 0 10px;
+              width: 50px;
+              height: 50px;
+              border-radius: 50%;
+
+            }
+
+            .member {
+
+              .memberName {
+                height: 20px;
+                font-size: 14px;
+                font-family: PingFangSC-Medium, PingFang SC;
+                font-weight: 500;
+                color: #333333;
+                line-height: 20px;
+                margin-bottom: 5px;
+              }
+
+              .bid {
+                height: 14px;
+                font-size: 12px;
+                font-family: HarmonyOS_Sans_Condensed;
+                color: #FD4F53;
+                line-height: 14px;
+              }
+
+              .time {
+                height: 17px;
+                font-size: 12px;
+                font-family: PingFangSC-Regular, PingFang SC;
+                font-weight: 400;
+                color: #ABABAB;
+                line-height: 17px;
+              }
+            }
+
+            .articipantStatus {
+              margin-left: auto;
+              width: 70px;
+              height: 70px;
+            }
+          }
+        }
+      }
+
+      .attentionDescription {
+        box-sizing: border-box;
+        padding: 15px 13px 0 15px;
+        background: #fff;
+        height: 150px;
+        background: #FFFFFF;
+        width: 100%;
+        margin-bottom: 10px;
+
+        .descriptionTop {
+          display: flex;
+          height: 22px;
+          margin-bottom: 19px;
+
+          .attentionDescriptionTitle {
+            height: 22px;
+            font-size: 16px;
+            font-family: PingFangSC-Medium, PingFang SC;
+            font-weight: 500;
+            color: #333333;
+            line-height: 22px;
+          }
+
+          .attentionDescriptionHandle {
+            height: 17px;
+            font-size: 12px;
+            font-family: PingFangSC-Medium, PingFang SC;
+            font-weight: 500;
+            color: #ABABAB;
+            line-height: 17px;
+            margin-top: 4px;
+            margin-left: auto;
+
+            .extra {
+              width: 12px;
+              height: 12px;
+              margin-top: 3px;
+            }
+          }
+        }
+
+        .flow {
+          display: flex;
+          justify-content: center;
+
+          .flowItem {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .flowImg {
+              width: 50px;
+              height: 50px;
+              margin-bottom: 10px;
+            }
+
+            .flowTxt {
+              height: 17px;
+              font-size: 12px;
+              font-family: PingFangSC-Regular, PingFang SC;
+              font-weight: 400;
+              color: #333333;
+              line-height: 17px;
+            }
+          }
+
+          .flowProgress {
+            width: 20px;
+            height: 8px;
+            margin: 21px 7px;
+          }
+        }
+      }
+
+      .attentionShop {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 72px;
+        background: #FFFFFF;
+        box-sizing: border-box;
+        padding: 15px;
+        margin-bottom: 23px;
+
+        .attentionShopIcon {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          margin-right: 10px;
+        }
+
+        .attentionShopInfo {
+          width: 210px;
+
+          .attentionShopName {
+            width: fit-content;
+            height: 20px;
+            font-size: 14px;
+            font-family: PingFangSC-Medium, PingFang SC;
+            font-weight: 500;
+            color: #333333;
+            line-height: 20px;
+            margin-bottom: 3px;
+          }
+
+          .attentionShopInformation {
+            display: flex;
+            align-items: center;
+            height: 17px;
+
+            .zhibao {
+              width: 10px;
+              height: 12px;
+              margin-right: 6px;
+            }
+
+            .stars {
+              margin-right: 3px;
+              width: 11px;
+              height: 11px;
+            }
+
+            .attentionCount {
+              width: fit-content;
+              height: 17px;
+              font-size: 12px;
+              font-family: PingFangSC-Regular, PingFang SC;
+              font-weight: 400;
+              color: #999999;
+              line-height: 17px;
+              margin-left: 8px;
+            }
+          }
+        }
+
+        .toShop {
+          margin-left: auto;
+          width: 54px;
+          height: 28px;
+          background: linear-gradient(90deg, #FF7132 0%, #FC2C77 100%);
+          border-radius: 14px;
+          text-align: center;
+          font-size: 12px;
+          font-family: PingFangSC-Medium, PingFang SC;
+          font-weight: 500;
+          color: #FFFFFF;
+          line-height: 28px;
+        }
+      }
+    }
+  }
+
+  .auctionGoodHandle {
+    height: 60px;
+    background: #FFFFFF;
+    box-shadow: 0px -3px 14px 0px rgba(243, 243, 243, 0.5);
+    z-index: 3;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .handleLeft {
+      display: flex;
+      align-items: center;
+
+      .handleItem {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 24px;
+
+        .handleImg {
+          width: 20px;
+          height: 20px;
+          margin-bottom: 5px;
+        }
+
+        .handleTxt {
+          height: 14px;
+          font-size: 10px;
+          font-family: PingFangSC-Regular, PingFang SC;
+          font-weight: 400;
+          color: #666666;
+          line-height: 14px;
+        }
+      }
+
+      .handleItem:first-child {
+        margin-left: 5px;
+      }
+    }
+
+    .handle {
+      width: 90px;
+      height: 34px;
+      background: linear-gradient(90deg, #FF7132 0%, #FC2C77 100%);
+      border-radius: 20px;
+      text-align: center;
+      line-height: 34px;
+      font-size: 12px;
+      font-family: PingFangSC-Medium, PingFang SC;
+      font-weight: 500;
+      color: #FFFFFF;
+    }
+  }
+
+  .popWrap {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 280px;
+    background: #FFFFFF;
+    border-radius: 15px 15px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding-top: 21px;
+    width: 100%;
+
+    .popTitle {
+      margin-bottom: 10px;
+      height: 22px;
+      font-size: 16px;
+      font-family: PingFangSC-Medium, PingFang SC;
+      font-weight: 500;
+      color: #333333;
+      line-height: 22px;
+    }
+
+    .startPrice {
+      height: 17px;
+      font-size: 12px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      color: #666666;
+      line-height: 17px;
+      margin-bottom: 20px;
+    }
+
+    .priceInput {
+      width: 140px;
+      height: 44px;
+      border-radius: 5px;
+     background-image: linear-gradient(90deg, rgba(255, 113, 50, 1), rgba(252, 44, 119, 1))  ;
+      box-sizing: border-box;
+      margin-bottom: 37px;
+      padding: 1px;
+      .priceInputItem{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        border-radius: 5px;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        .priceIcon {
+          width: 24px;
+          height: 24px;
+          position: absolute;
+          right: 0;
+          bottom: 0;
+        }
+
+        .Input {
+          // width: fit-content;
+          height: 22px;
+          font-size: 16px;
+          font-family: HarmonyOS_Sans_Condensed_Medium;
+          color: #333333;
+          line-height: 19px;
+          width: 51px;
+        }
+      }
+
+    }
+
+
+    .bidHandle {
+      width: 345px;
+      height: 44px;
+      background: linear-gradient(90deg, #FF7132 0%, #FC2C77 100%);
+      border-radius: 22px;
+      text-align: center;
+      line-height: 44px;
+      font-size: 14px;
+      font-family: PingFangSC-Medium, PingFang SC;
+      font-weight: 500;
+      color: #FFFFFF;
+      margin-bottom: 15px;
+    }
+
+    .bidSure {
+      height: 17px;
+      display: flex;
+      font-size: 12px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      color: #666666;
+      line-height: 17px;
+
+      .radio {
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        margin-right: 5px;
+        border: 1px solid #979797;
+        margin-top: 2px;
+      }
+    }
+  }
+}

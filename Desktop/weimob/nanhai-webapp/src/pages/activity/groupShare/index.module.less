@@ -1,0 +1,189 @@
+@import '@wmeimob/taro-design/src/components/styles/themes/default.less';
+
+.groupShareStyle {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+
+  .groupShare {
+    .groupShareGood {
+      width: 100%;
+      height: 260px;
+      background: #d8d8d8;
+    }
+
+    .groupShareGoodImg {
+      width: 100%;
+      height: 260px;
+    }
+
+    .groupShareGoodInfo {
+      width: 100%;
+      height: 155px;
+      background: #ffffff;
+      border-radius: 10px 10px 0px 0px;
+      box-sizing: border-box;
+      padding: 15px;
+      margin-top: -10px;
+      margin-bottom: 10px;
+
+      .groupShareGoodName {
+        width: 100%;
+        height: 50px;
+        font-size: 18px;
+        font-family: PingFangSC-Medium, PingFang SC;
+        font-weight: 500;
+        color: #333333;
+        line-height: 25px;
+        margin-bottom: 10px;
+        text-overflow: -o-ellipsis-lastline;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+      }
+
+      .groupShareGoodSpec {
+        height: 17px;
+        font-size: 12px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #ababab;
+        line-height: 17px;
+        margin-bottom: 8px;
+      }
+
+      .groupShareGoodDesc {
+        height: 40px;
+        font-size: 14px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #666666;
+        line-height: 20px;
+        text-overflow: -o-ellipsis-lastline;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+      }
+    }
+
+    .groupShareInfo {
+      width: 100%;
+      height: 282px;
+      background: #ffffff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      box-sizing: border-box;
+      padding-top: 15px;
+
+      .groupShareInfoPhoto {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+
+        .photo {
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          margin: 0 15px;
+          position: relative;
+
+          .photoImg {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+          }
+
+          .owner {
+            width: 26px;
+            height: 14px;
+            background: linear-gradient(90deg, #FF7132 0%, #FC2C77 100%);
+            border-radius: 3px;
+            font-size: 8px;
+            font-family: PingFangSC-Semibold, PingFang SC;
+            font-weight: 600;
+            color: #FFFFFF;
+            text-align: center;
+            line-height: 14px;
+            position: absolute;
+            bottom: 0;
+            left: 13px;
+          }
+        }
+
+      }
+
+      .groupShareHint {
+        height: 20px;
+        font-size: 14px;
+        font-family: PingFangSC-Medium, PingFang SC;
+        font-weight: 500;
+        color: #333333;
+        line-height: 20px;
+        margin-bottom: 15px;
+      }
+
+      .groupShareCount {
+        display: flex;
+        height: 20px;
+        justify-content: center;
+        margin-bottom: 34px;
+
+        .groupShareTime {
+          width: 20px;
+          height: 20px;
+          font-size: 12px;
+          font-family: HarmonyOS_Sans_Condensed_Bold;
+          color: #ffffff;
+          text-align: center;
+          line-height: 20px;
+        }
+
+        .groupShareCountColon {
+          width: 2px;
+          height: 6px;
+          color: #fd4f53;
+          margin: 0 4px;
+        }
+
+        .groupShareCountHint {
+          font-size: 12px;
+          font-family: PingFangSC-Medium, PingFang SC;
+          font-weight: 500;
+          color: #9d9d9d;
+          margin-left: 5px;
+          line-height: 20px;
+        }
+      }
+
+      .groupShareCode {
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .code {
+          height: 60px;
+          width: 60px;
+          margin-right: 15px;
+        }
+
+        .codeHint {
+          width: 126px;
+          height: 50px;
+          font-size: 14px;
+          font-family: PingFangSC-Regular, PingFang SC;
+          font-weight: 400;
+          color: #333333;
+          line-height: 25px;
+        }
+      }
+    }
+  }
+}

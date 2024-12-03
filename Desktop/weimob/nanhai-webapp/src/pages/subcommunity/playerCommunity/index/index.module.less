@@ -1,0 +1,176 @@
+@import '@wmeimob/taro-design/src/components/styles/themes/default.less';
+
+page {
+  background: #F6F8FA;
+}
+
+.indexStyle {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+
+  .navTop {
+    height: 160px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+    .userImg {
+      position: absolute;
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      left: 15px;
+      bottom: -45px;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .back {
+        margin-left: 17px;
+        flex: 1;
+      }
+
+      .title {
+        font-size: 17px;
+        font-family: PingFangSC-Medium, PingFang SC;
+        font-weight: 500;
+        color: #FFF;
+        flex: 1;
+        text-align: center;
+        margin-right: 17px;
+      }
+
+      .kong {
+        visibility: hidden;
+        flex: 1;
+      }
+    }
+  }
+
+  .playerInfo {
+    padding: 15px;
+    background: #FFF;
+
+    .editBtn {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+
+      .btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 64px;
+        height: 30px;
+        background: linear-gradient(90deg, #FF7132 0%, #FC2C77 100%);
+        border-radius: 16px;
+        margin-bottom: 15px;
+
+        .editicon {
+          width: 12px;
+          height: 12px;
+          margin-right: 5px;
+        }
+
+        .edittext {
+          font-size: 12px;
+          font-family: PingFangSC-Medium, PingFang SC;
+          font-weight: 500;
+          color: #FFFFFF;
+        }
+      }
+    }
+
+    .uname {
+      font-size: 22px;
+      font-family: PingFangSC-Semibold, PingFang SC;
+      font-weight: 600;
+      color: #333333;
+    }
+
+    .udesc {
+      font-size: 13px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      color: #666666;
+      margin: 10px 0 20px 0;
+      min-height: 60px;
+      line-height: 20px;
+    }
+
+    .menus {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        flex: 1;
+
+        .num {
+          font-size: 18px;
+          font-family: HarmonyOS_Sans_Condensed_Black;
+          color: #333333;
+        }
+
+        .title {
+          font-size: 12px;
+          font-family: PingFangSC-Regular, PingFang SC;
+          font-weight: 400;
+          color: #999999;
+        }
+      }
+    }
+  }
+
+  .wrapper {
+    .myfb {
+      display: flex;
+      align-items: center;
+      padding: 17px 0 16px 17px;
+      background: #FFF;
+      margin-top: 10px;
+
+      .fbicon {
+        width: 10px;
+        height: 16px;
+      }
+
+      .fbtext {
+        font-size: 16px;
+        font-family: PingFangSC-Medium, PingFang SC;
+        font-weight: 500;
+        color: #333333;
+        margin-left: 5px;
+      }
+    }
+  }
+
+  .list {
+    flex: 1;
+    overflow: hidden;
+    min-height: 0;
+  }
+
+  .formTextArea {
+    width: 310px;
+    height: 130px;
+    background: #F6F8FA;
+    border-radius: 5px;
+    font-size: 13px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #666666;
+    line-height: 20px;
+    box-sizing: border-box;
+    padding: 10px;
+  }
+}

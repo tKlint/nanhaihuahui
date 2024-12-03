@@ -1,0 +1,65 @@
+@import '@wmeimob/taro-design/src/components/styles/themes/default.less';
+
+.orderGood {
+  width: 100%;
+  min-height: 100px;
+  display: flex;
+
+  .orderGoodImg {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+  }
+
+  .orderGoodInfo {
+    .orderGoodName {
+      width: 235px;
+      height: 42px;
+      font-size: 15px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      color: #222222;
+      line-height: 21px;
+      margin-bottom: 10px;
+      text-overflow: -o-ellipsis-lastline;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+    }
+
+    .orderGoodSpec {
+      height: 17px;
+      font-size: 12px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      color: #999999;
+      line-height: 17px;
+      margin-bottom: 13px;
+    }
+
+    .orderGoodPc {
+      height: 17px;
+      display: flex;
+      justify-content: space-between;
+
+      .orderGoodPrice {
+        height: 17px;
+        font-size: 14px;
+        font-family: HarmonyOS_Sans_Condensed_Medium;
+        color: #F10215;
+        line-height: 17px;
+      }
+
+      .orderGoodCount {
+        height: 17px;
+        font-size: 12px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #333333;
+        line-height: 17px;
+      }
+    }
+  }
+}

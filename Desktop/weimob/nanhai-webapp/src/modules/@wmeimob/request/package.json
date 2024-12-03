@@ -1,0 +1,22 @@
+{
+  "name": "request",
+  "version": "1.3.10",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.f.wmeimob.com/Frontend/request.git"
+  },
+  "installationPath": [
+    "src"
+  ],
+  "installationPathGitignore": [
+    "src/modules"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {}
+}

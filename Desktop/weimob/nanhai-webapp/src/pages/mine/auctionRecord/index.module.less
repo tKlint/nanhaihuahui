@@ -1,0 +1,104 @@
+@import '@wmeimob/taro-design/src/components/styles/themes/default.less';
+
+.auctionRecordStyle {
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  .auctionRecordWrap{
+    flex: 1;
+    min-height: 0;
+    overflow: hidden;
+    .sview{
+      height: 100%;
+    }
+  }
+  .auctionRecordList {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .auctionRecord {
+      margin-bottom: 15px;
+      width: 165px;
+      height: 269px;
+      background: #FFFFFF;
+      box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.03);
+      border-radius: 10px;
+      position: relative;
+
+      .auctionRecordImg {
+        width: 165px;
+        height: 165px;
+        border-radius: 10px 10px 0 0;
+        margin-bottom: 10px;
+      }
+
+      .auctionGoodName {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 10px;
+        height: 20px;
+        font-size: 14px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #333333;
+        line-height: 20px;
+        text-shadow: 0px 2px 15px rgba(0, 0, 0, 0.03);
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        margin-bottom: 5px;
+      }
+
+      .auctionGoodPrice {
+        margin-left: 10px;
+        width: fit-content;
+        height: 19px;
+        font-size: 16px;
+        font-family: HarmonyOS_Sans_Condensed_Medium;
+        color: #FD4F53;
+        line-height: 19px;
+        text-shadow: 0px 2px 15px rgba(0, 0, 0, 0.03);
+        margin-bottom: 10px;
+      }
+
+      .auctionGoodHandle {
+        margin-left: auto;
+        margin-right: 10px;
+        width: 90px;
+        height: 30px;
+        // background: linear-gradient(90deg, #FF7132 0%, #FC2C77 100%);
+        box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.03);
+        border-radius: 15px;
+        text-align: center;
+        line-height: 30px;
+        font-size: 12px;
+        font-family: PingFangSC-Medium, PingFang SC;
+        font-weight: 500;
+        color: #FFFFFF;
+        text-shadow: 0px 2px 15px rgba(0, 0, 0, 0.03);
+      }
+
+      .auctionStatus {
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        width: 40px;
+        height: 24px;
+        background: #FFFFFF;
+        border-radius: 10px 3px 10px 3px;
+        font-size: 12px;
+        font-family: PingFangSC-Medium, PingFang SC;
+        font-weight: 500;
+        color: #333333;
+        text-align: center;
+        line-height: 24px;
+      }
+
+    }
+  }
+}

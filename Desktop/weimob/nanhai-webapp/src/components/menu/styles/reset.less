@@ -1,0 +1,32 @@
+@import './global.less';
+
+view,
+div,
+section {
+    // display       : flex;
+    // flex-direction: column;
+    box-sizing: border-box;
+}
+
+page,
+html,
+body {
+    font-size       : @fontSize;
+    color           : @fontColor;
+    background-color: @bodyBackground;
+    min-height      : 100%;
+    line-height     : 1.5;
+}
+
+textarea {
+    background-color: transparent;
+    resize          : none;
+}
+
+// 去除h5 :focus状态下的黄色边框
+
+/* #ifdef h5 /
+*:focus {
+    outline: none;
+}
+/ #endif */

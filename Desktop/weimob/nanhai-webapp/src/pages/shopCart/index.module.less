@@ -1,0 +1,445 @@
+@import '@wmeimob/taro-design/src/components/styles/themes/default.less';
+
+.shopCartStyle {
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+
+  .shopCartManage {
+    width: 100%;
+    height: 40px;
+    background: #FFFFFF;
+    text-align: right;
+    line-height: 40px;
+    font-size: 14px;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 500;
+    color: #333333;
+    box-sizing: border-box;
+    padding-right: 20px;
+  }
+
+  .shopCart {
+    flex: 1;
+    min-height: 0;
+    box-sizing: border-box;
+    padding: 10px 0;
+    overflow: hidden;
+
+    .sview {
+      height: 100%;
+    }
+
+    .shop {
+      min-height: 174px;
+      background: #FFFFFF;
+      width: 100%;
+      box-sizing: border-box;
+      padding: 12px 15px 15px 12px;
+      margin-bottom: 10px;
+
+      .shopInfo {
+        display: flex;
+        height: 30px;
+        align-items: center;
+        margin-bottom: 17px;
+        margin-bottom: 15px;
+
+        .shopIcon {
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          margin-right: 5px;
+        }
+
+        .shopName {
+          height: 22px;
+          font-size: 16px;
+          font-family: PingFangSC-Medium, PingFang SC;
+          font-weight: 500;
+          color: #333333;
+          line-height: 22px;
+        }
+
+        .getCoupon {
+          margin-left: auto;
+          width: 60px;
+          height: 28px;
+          background: linear-gradient(90deg, #FF7132 0%, #FC2C77 100%);
+          border-radius: 16px;
+          text-align: center;
+          line-height: 28px;
+          font-size: 12px;
+          font-family: PingFangSC-Medium, PingFang SC;
+          font-weight: 500;
+          color: #FFFFFF;
+        }
+      }
+
+      .goodInfo {
+        display: flex;
+        width: 100%;
+        height: 100px;
+        margin-bottom: 10px;
+
+        .select {
+          width: 16px;
+          height: 16px;
+          margin: 0 15px 0 3px;
+        }
+
+        .loseGood {
+          height: 100px;
+          font-size: 12px;
+          font-family: PingFangSC-Regular, PingFang SC;
+          font-weight: 400;
+          color: #ABABAB;
+          line-height: 100px;
+          margin-right: 10px;
+        }
+
+        .goodImg {
+          width: 100px;
+          height: 100px;
+          border-radius: 10px;
+          margin-right: 10px;
+        }
+
+        .good {
+          width: 204px;
+
+          .goodName {
+            width: 204px;
+            height: 42px;
+            font-size: 15px;
+            font-family: PingFangSC-Regular, PingFang SC;
+            font-weight: 400;
+            color: #222222;
+            line-height: 21px;
+            margin-bottom: 10px;
+            text-overflow: -o-ellipsis-lastline;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+          }
+
+          .goodNameLose {
+            color: #ABABAB;
+          }
+
+          .goodSpec {
+            height: 17px;
+            font-size: 12px;
+            font-family: PingFangSC-Regular, PingFang SC;
+            font-weight: 400;
+            color: #999999;
+            line-height: 17px;
+            margin-bottom: 13px;
+          }
+
+          .goodPc {
+            height: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .goodPrice {
+              height: 17px;
+              font-size: 14px;
+              font-family: HarmonyOS_Sans_Condensed_Medium;
+              color: #FD4F53;
+              line-height: 17px;
+            }
+
+            .goodPriceLose {
+              color: #ABABAB;
+            }
+
+            .loseHint {
+              height: 17px;
+              font-size: 12px;
+              font-family: PingFangSC-Regular, PingFang SC;
+              font-weight: 400;
+              color: #FD4F53;
+              line-height: 17px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .shopCartHandle {
+    width: 100%;
+    height: 60px;
+    background: #FFFFFF;
+    box-shadow: 0px -3px 14px 0px rgba(243, 243, 243, 0.5);
+    z-index: 3;
+    box-sizing: border-box;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+
+    .checkAll {
+      width: 16px;
+      height: 16px;
+      margin-right: 5px;
+    }
+
+    .checkAllTitle {
+      font-size: 12px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      color: #222222;
+      margin-right: 20px;
+    }
+
+    .total {
+      font-size: 12px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      color: #333333;
+    }
+
+    .totalAmount {
+      font-size: 16px;
+      font-family: HarmonyOS_Sans_Condensed_Bold;
+      color: #FD4F53;
+    }
+
+    .settle {
+      width: 80px;
+      height: 34px;
+      background: linear-gradient(90deg, #FF7132 0%, #FC2C77 100%);
+      border-radius: 20px;
+      text-align: center;
+      line-height: 34px;
+      font-size: 12px;
+      font-family: PingFangSC-Medium, PingFang SC;
+      font-weight: 500;
+      color: #FFFFFF;
+      margin-left: auto;
+    }
+
+    .addCollection {
+      background: #FFFFFF;
+      border-radius: 20px;
+      border: 1px solid #333333;
+      color: #333333;
+    }
+
+    .delBtn {
+      margin-left: 15px;
+    }
+  }
+
+  .checkListWrap {
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    width: 100%;
+    max-height: 559px;
+    background: #FFFFFF;
+    border-radius: 15px 15px 0px 0px;
+    box-sizing: border-box;
+    padding: 15px;
+
+    .checkListTitle {
+      display: flex;
+      align-items: center;
+      height: 22px;
+      margin-bottom: 25px;
+
+      .checkTitle {
+        height: 22px;
+        font-size: 16px;
+        font-family: PingFangSC-Medium, PingFang SC;
+        font-weight: 500;
+        color: #333333;
+        line-height: 22px;
+        margin-right: 15px;
+      }
+
+      .checkListCount {
+        height: 20px;
+        font-size: 14px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #999999;
+        line-height: 20px;
+      }
+
+      .checkClose {
+        width: 13px;
+        height: 13px;
+        margin-left: auto;
+      }
+    }
+
+
+    .orderGoodWrap {
+      margin-bottom: 15px;
+    }
+
+    .couponItem {
+      width: 100%;
+      height: 88px;
+      display: flex;
+      margin-bottom: 15px;
+
+      .couponType {
+        width: 86px;
+        box-sizing: border-box;
+        padding: 19px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin-right: 15px;
+
+        .couponPrice {
+          font-size: 22px;
+          font-family: HarmonyOS_Sans_Condensed_Bold;
+          color: #FD4F53;
+          height: 26px;
+          line-height: 26px;
+
+        }
+
+        .couponTypeName {
+          height: 17px;
+          font-size: 12px;
+          font-family: PingFangSC-Regular, PingFang SC;
+          font-weight: 400;
+          color: #FD4F53;
+          line-height: 17px;
+        }
+      }
+
+      .couponInfo {
+        box-sizing: border-box;
+        padding: 18px 0;
+
+        .couponName {
+
+          height: 22px;
+          font-size: 16px;
+          font-family: PingFangSC-Medium, PingFang SC;
+          font-weight: 500;
+          color: #FD4F53;
+          line-height: 22px;
+        }
+
+
+        .couponTime {
+          width: 120px;
+          height: 19px;
+          border-radius: 3px;
+          border: 1px solid #FFE8E8;
+          font-size: 10px;
+          font-family: PingFangSC-Regular, PingFang SC;
+          font-weight: 400;
+          color: #FD4F53;
+          text-align: center;
+          line-height: 19px;
+        }
+      }
+
+      // .couponSelect {
+      //   margin-left: auto;
+      //   width: 16px;
+      //   height: 16px;
+      //   margin-top: 36px;
+      //   margin-right: 20px;
+      // }
+      .draw {
+        margin-left: auto;
+        width: 70px;
+        height: 34px;
+        border-radius: 17px;
+        border: 1px solid #FD4F53;
+        text-align: center;
+        line-height: 34px;
+        font-size: 14px;
+        font-family: PingFangSC-Medium, PingFang SC;
+        font-weight: 500;
+        color: #FD4F53;
+        margin-top: 29px;
+        margin-right: 15px;
+      }
+
+      .drawed {
+        height: 20px;
+        font-size: 14px;
+        font-family: PingFangSC-Medium, PingFang SC;
+        font-weight: 500;
+        color: #FD4F53;
+        line-height: 20px;
+        margin-top: 36px;
+        margin-right: 29px;
+        margin-left: auto;
+      }
+
+    }
+
+    .hint {
+      height: 17px;
+      font-size: 12px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      color: #666666;
+      line-height: 17px;
+      width: 100%;
+      text-align: center;
+      margin: 23px 0 15px 0;
+    }
+
+    .history {
+      margin-bottom: 15px;
+
+      .couponItem {
+        margin-bottom: 5px;
+        opacity: 0.6;
+      }
+
+      .historyHint {
+        width: 100%;
+        height: 16px;
+        font-size: 11px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #FD4F53;
+        line-height: 16px;
+        text-align: right;
+      }
+    }
+  }
+
+
+  .noLogin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .noLoginImg {
+      margin: 150px 0 10px 0;
+      width: 160px;
+      height: 160px;
+    }
+
+    .noLoginHint {
+      width: 100%;
+      text-align: center;
+      height: 20px;
+      font-size: 14px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      color: #999999;
+      line-height: 20px;
+    }
+  }
+}

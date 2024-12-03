@@ -1,0 +1,41 @@
+@import '@wmeimob/taro-design/src/components/styles/themes/default.less';
+
+.tabberStyle {
+  width: 100%;
+  height: 50px;
+  background: #FFFFFF;
+  display: flex;
+
+  .tabberItem {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding-top: 15px;
+
+    .tabberTitle {
+      height: 20px;
+      text-align: center;
+      font-size: 14px;
+      font-family: PingFangSC-Medium, PingFang SC;
+      font-weight: 500;
+      color: #333333;
+      line-height: 20px;
+    }
+
+    .tabberCur {
+      width: 20px;
+      height: 3px;
+      background: #FD4F53;
+      border-radius: 2px;
+    }
+    .currentImg {
+      width: 14px;
+      height: 6px;
+      // margin-top: 2px;
+      margin-bottom: 10px;
+    }
+  }
+}

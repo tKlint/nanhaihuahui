@@ -1,0 +1,25 @@
+{
+  "name": "@wmeimob/aliyun",
+  "version": "1.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "installationPath": [
+    "src",
+    "index.ts"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@git.f.wmeimob.com:9922/Frontend/aliyun.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@tarojs/taro": "^2.2.9",
+    "@wmeimob/node-tools": "ssh://git@git.f.wmeimob.com:9922/Frontend/node-tools.git",
+    "eslint": "6.5.1",
+    "eslint-config-wmeimob": "ssh://git@git.f.wmeimob.com:9922/Frontend/eslint-config-wmeimob.git"
+  }
+}

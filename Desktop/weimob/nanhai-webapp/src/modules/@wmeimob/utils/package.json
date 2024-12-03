@@ -1,0 +1,19 @@
+{
+  "name": "@wmeimob/utils",
+  "version": "1.1.7",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "installationPath": [
+    "src"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@git.f.wmeimob.com:9922/Frontend/utils.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {}
+}

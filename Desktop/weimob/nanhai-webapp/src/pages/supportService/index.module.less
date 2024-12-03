@@ -1,0 +1,93 @@
+@import '@wmeimob/taro-design/src/components/styles/themes/default.less';
+
+.supportServiceStyle {
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+
+  .supportService {
+    flex: 1;
+    min-height: 0;
+    overflow: hidden;
+
+    .sview {
+      height: 100%;
+
+      .service {
+        box-sizing: border-box;
+        padding: 30px 15px;
+
+        .serviceMember {
+          width: 100%;
+          display: flex;
+          margin-bottom: 20px;
+
+          .memberImg {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            margin-right: 10px;
+          }
+
+          .memberMessage {
+            min-height: 36px;
+            background: #FFFFFF;
+            border-radius: 10px;
+            max-width: 170px;
+            font-size: 14px;
+            font-family: PingFangSC-Regular, PingFang SC;
+            font-weight: 400;
+            color: #000000;
+            line-height: 20px;
+            box-sizing: border-box;
+            padding: 8px 10px;
+          }
+        }
+
+        .client {
+          justify-content: flex-end;
+          flex-direction: row-reverse;
+
+          .memberMessage {
+            background: #FD4F53;
+            color: #fff;
+            margin-left: auto;
+          }
+
+          .memberImg {
+            margin-right: 0;
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  .supportServiceHandle {
+    width: 100%;
+    height: 60px;
+    background: #FFFFFF;
+    display: flex;
+    align-items: center;
+
+    .supportServiceInput {
+      width: 290px;
+      height: 40px;
+      background: #F6F8FA;
+      border-radius: 20px;
+      box-sizing: border-box;
+      padding: 10px 15px;
+      font-size: 14px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      color: #999999;
+      line-height: 20px;
+      margin: 0 25px 0 15px;
+    }
+    .sendIcon{
+      width: 20px;
+      height: 20px;
+    }
+  }
+}

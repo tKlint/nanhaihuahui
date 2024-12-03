@@ -1,0 +1,188 @@
+@import '@wmeimob/taro-design/src/components/styles/themes/default.less';
+
+.afterSaleDetailStyle {
+  height: 100%;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+
+  .afterSaleDetail {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px 0;
+    flex: 1;
+    min-height: 0;
+
+    .afterSaleGood {
+      box-sizing: border-box;
+      padding: 15px;
+      background: #fff;
+      margin-bottom: 10px;
+
+
+
+    }
+
+    .afterSaleItem {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      height: 50px;
+      background: #FFFFFF;
+      box-sizing: border-box;
+      padding: 15px;
+      align-items: center;
+      margin-bottom: 10px;
+
+      .afterSaleItemLable {
+        height: 20px;
+        font-size: 14px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #333333;
+        line-height: 20px;
+      }
+
+      .afterSaleItemLableRequired::before {
+        content: '*';
+        color: #FD4F53;
+      }
+
+      .afterSaleItemTitle {
+        height: 20px;
+        font-size: 14px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #999999;
+        line-height: 20px;
+
+        .siteInput {
+          text-align: right;
+        }
+      }
+
+      .afterSaleDetailAmount {
+        color: #F10215;
+      }
+
+      .afterSaleItemExtra {
+        width: 6px;
+        height: 10px;
+        margin-left: 6px;
+      }
+    }
+
+    .afterSaleImage {
+      width: 100%;
+      height: 165px;
+      background: #FFFFFF;
+      box-sizing: border-box;
+      padding: 15px;
+
+      .afterSaleImagetTitle {
+        height: 20px;
+        font-size: 14px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #333333;
+        line-height: 20px;
+        margin-bottom: 15px;
+      }
+
+      // .imageWrap {
+      //   display: flex;
+      //   justify-content: space-between;
+
+      //   .imageItem {
+      //     width: 100px;
+      //     height: 100px;
+      //     border-radius: 10px;
+      //     position: relative;
+
+      //     .imageItemClose {
+      //       width: 20px;
+      //       height: 20px;
+      //       position: absolute;
+      //       top: 5px;
+      //       right: 5px;
+      //     }
+
+      //   }
+
+      //   .imageItemSelect {
+      //     background: #F6F8FA;
+      //     border-radius: 10px;
+      //     border: 1px solid #EEEEEE;
+      //     display: flex;
+      //     flex-direction: column;
+      //     align-items: center;
+
+      //     .imageCarema {
+      //       width: 24px;
+      //       height: 24px;
+      //       margin-top: 19px;
+      //       margin-bottom: 5px;
+      //     }
+
+      //     .imageItemHint {
+      //       height: 17px;
+      //       font-size: 12px;
+      //       font-family: PingFangSC-Regular, PingFang SC;
+      //       font-weight: 400;
+      //       color: #999999;
+      //       line-height: 17px;
+      //       margin-bottom: 5px;
+      //     }
+      //   }
+      // }
+
+      // .imageWrap:after {
+      //   content: '';
+      //   width: 90px;
+      // }
+    }
+  }
+
+
+
+  .reasonWrap {
+    width: 100%;
+    background: #FFFFFF;
+    border-radius: 15px 15px 0px 0px;
+    padding: 15px;
+
+    .modalTitle {
+      width: 100%;
+      text-align: center;
+      height: 22px;
+      font-size: 16px;
+      font-family: PingFangSC-Medium, PingFang SC;
+      font-weight: 500;
+      color: #333333;
+      line-height: 22px;
+      margin-bottom: 6px;
+    }
+    .reasonItem{
+      height: 49px;
+      min-height: 49px;
+      border-bottom:1px solid #FAFAFA;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .reasonItemLabel{
+        margin-left: 8px;
+        height: 20px;
+        font-size: 14px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #333333;
+        line-height: 20px;
+      }
+      .reasonItemIcon{
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+}

@@ -1,0 +1,124 @@
+@import '@wmeimob/taro-design/src/components/styles/themes/default.less';
+
+.appealStyle {
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+
+  .appeal {
+    flex: 1;
+    min-height: 0;
+
+    .appealWrap {
+      width: 100%;
+      height: 450px;
+      background: #FFFFFF;
+      box-sizing: border-box;
+      padding: 15px;
+      margin-bottom: 45px;
+
+      .orderNo {
+        height: 21px;
+        font-size: 15px;
+        font-family: PingFangSC-Medium, PingFang SC;
+        font-weight: 500;
+        color: #333333;
+        line-height: 21px;
+        margin-bottom: 15px;
+      }
+
+      .appealTitle {
+        height: 20px;
+        font-size: 14px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #333333;
+        line-height: 20px;
+        margin-bottom: 10px;
+      }
+
+      .appealTitle::before {
+        content: '*';
+        color: #FD4F53;
+
+      }
+
+      .imageWrap {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 25px;
+
+        .imageItem {
+          width: 100px;
+          height: 100px;
+          border-radius: 10px;
+          position: relative;
+
+          .imageItemClose {
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            top: 5px;
+            right: 5px;
+          }
+
+        }
+
+        .imageItemSelect {
+          background: #F6F8FA;
+          border-radius: 10px;
+          border: 1px solid #EEEEEE;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          .imageCarema {
+            width: 24px;
+            height: 24px;
+            margin-top: 19px;
+            margin-bottom: 5px;
+          }
+
+          .imageItemHint {
+            height: 17px;
+            font-size: 12px;
+            font-family: PingFangSC-Regular, PingFang SC;
+            font-weight: 400;
+            color: #999999;
+            line-height: 17px;
+            margin-bottom: 5px;
+          }
+        }
+      }
+
+      .imageWrap:after {
+        content: '';
+        width: 90px;
+      }
+
+      .appealInput {
+        width: 100%;
+        height: 44px;
+        border-radius: 5px;
+        border: 1px solid #EEEEEE;
+        box-sizing: border-box;
+        padding:  0 15px;
+        line-height: 44px;
+      }
+    }
+
+    .appealConcat {
+      height: 17px;
+      font-size: 12px;
+      font-family: PingFangSC-Medium, PingFang SC;
+      font-weight: 500;
+      color: #ABABAB;
+      line-height: 17px;
+      width: 100%;
+      text-align: center;
+    }
+
+  }
+
+}

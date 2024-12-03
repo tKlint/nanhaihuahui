@@ -1,0 +1,69 @@
+@import '@wmeimob/taro-design/src/components/styles/themes/default.less';
+
+.businessStyle {
+  height: 100%;
+  overflow: hidden;
+
+  .businessShop {
+    width: 100%;
+    height: 70px;
+    background: #FFFFFF;
+    box-sizing: border-box;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+
+    .businessShopLogo {
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    .businessShopName {
+      height: 20px;
+      font-size: 14px;
+      font-family: PingFangSC-Medium, PingFang SC;
+      font-weight: 500;
+      color: #333333;
+      line-height: 20px;
+    }
+  }
+
+  .business {
+    height: 100px;
+    background: #FFFFFF;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px;
+    margin-bottom: 10px;
+
+    .businessItem {
+      display: flex;
+      align-items: center;
+
+      justify-content: space-between;
+      height: 20px;
+      margin-bottom: 30px;
+
+      .businessItemLabel {
+        height: 20px;
+        font-size: 14px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #333333;
+        line-height: 20px;
+      }
+
+      .extra {
+        width: 12px;
+        height: 12px;
+      }
+    }
+
+    .businessItem:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+@import '../styles/themes/default.less';
+@import '../styles/utils/index.less';
+
+@MMDivider: MMDivider;
+
+.MMDivider {
+    height: 0.5px;
+    .divider()
+}
+
+.MMDivider__vertical {
+    width : 0.5px;
+    height: 100%;
+    .divider('left');
+}
+
+.MMDivider__vertical_auto {
+    width : 0.5px;
+    height: auto;
+    .divider('left');
+}

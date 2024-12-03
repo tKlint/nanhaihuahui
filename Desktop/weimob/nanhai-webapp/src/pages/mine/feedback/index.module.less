@@ -1,0 +1,75 @@
+@import '@wmeimob/taro-design/src/components/styles/themes/default.less';
+
+.feedbackStyle {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .feedbackWrap {
+    flex: 1;
+
+    .feedbackLable {
+      height: 20px;
+      font-size: 14px;
+      font-family: PingFangSC-Medium, PingFang SC;
+      font-weight: 500;
+      color: #333333;
+      line-height: 20px;
+      margin-bottom: 15px;
+    }
+
+    .feedbackText {
+      width: 100%;
+      min-height: 215px;
+      background: #FFFFFF;
+      box-sizing: border-box;
+      padding: 15px;
+      margin-bottom: 10px;
+
+      .feedbackCont {
+        width: 100%;
+        min-height: 150px;
+        background: #F6F8FA;
+        border-radius: 5px;
+        padding: 15px;
+        box-sizing: border-box;
+      }
+    }
+
+    .feedbackImg {
+      width: 375px;
+      min-height: 165px;
+      background: #FFFFFF;
+      padding: 15px;
+      box-sizing: border-box;
+      margin-bottom: 15px;
+    }
+
+    .feedbackConcat {
+      width: 100%;
+      height: 165px;
+      background: #FFFFFF;
+      padding: 15px;
+      box-sizing: border-box;
+
+      .feedbackLable::before {
+        content: "*";
+        color: #FD4F53;
+      }
+
+      .feedbackConcatInput {
+        width: 100%;
+        height: 44px;
+        background: #F6F8FA;
+        border-radius: 22px;
+        font-size: 14px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #ABABAB;
+        line-height: 44px;
+        box-sizing: border-box;
+        padding: 0 15px;
+      }
+    }
+  }
+}

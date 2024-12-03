@@ -1,0 +1,241 @@
+@import './styles/themes/default.less';
+
+.MMMenu {
+  display: flex;
+  background: #fff;
+  width: 100%;
+  height: 100%;
+  font-size: 13px;
+  line-height: 18px;
+  color: @gray6;
+  overflow: hidden;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 20px 0;
+  width: 120px;
+  text-align: center;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  /* autoprefixer: off */
+  -webkit-line-clamp: 1; //只显示两行
+  /*autoprefixer: on */
+  overflow: hidden;
+  color: #333;
+}
+
+.overflows {
+  overflow: hidden;
+}
+
+.secondBoxsBoxs {
+  margin-bottom: 20px;
+  width: 100%;
+  padding-left: 15px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.secondBoxTopImg {
+  width: 225px;
+  height: 64px;
+  margin-bottom: 19px;
+  margin-left: 15px;
+}
+
+.secondBoxTopTitle {
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+
+  .secondBoxLeft {
+    width: 40px;
+    height: 1px;
+    border: 1px solid;
+    border-image: linear-gradient(63deg, rgba(255, 255, 255, 0), rgba(222, 222, 222, 1)) 1 1;
+  }
+
+  .title {
+    font-size: 16px;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 500;
+    color: #333333;
+    line-height: 22px;
+    margin: 0 10px;
+  }
+
+  .secondBoxRight {
+    width: 39px;
+    height: 1px;
+    border: 1px solid;
+    border-image: linear-gradient(63deg, rgba(255, 255, 255, 0), rgba(222, 222, 222, 1)) 1 1;
+  }
+}
+
+.titleBox {
+  // height: 18px;
+  // line-height: 18px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 15px;
+
+  .more {
+    font-size: 13px;
+    color: #999;
+    flex-shrink: 0;
+  }
+
+  .secondTitle {
+    font-size: 15px;
+    font-weight: 500;
+    color: rgba(74, 74, 74, 1);
+  }
+}
+
+.noShow {
+  display: none;
+}
+
+.list {
+  height: 100%;
+  width: calc(100vw / 375 * 120);
+  background-color: #fff;
+  font-weight: 300;
+  text-align: center;
+  border-radius: 0px 8px 0px 0px;
+  // overflow: hidden;
+
+  .item {
+    color: #666666;
+    overflow: hidden;
+  }
+
+  .selected {
+    color: #FD4F53;
+    font-weight: 500;
+    background: #fff;
+    position: relative;
+
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      width: calc(100vw / 375 * 2);
+      height: 14px;
+      background-color: #FD4F53;
+      left: 0;
+      margin-top: 3px;
+    }
+  }
+}
+
+.scrollIOSFix {
+  /* autoprefixer: ignore next */
+  -webkit-overflow-scrolling: touch;
+}
+
+.listChildren {
+  flex: 1;
+  height: 100%;
+  background-color: @gray1;
+  // border-left     : 1px solid #ECEEEE;
+
+  .item {
+    padding: 11px 0px 5px 15px;
+    // border-bottom: 1px solid #ECEEEE;
+    margin-bottom: 9px;
+
+    &:last-child {
+      border-bottom: 0px;
+      margin-bottom: 0px;
+    }
+  }
+
+  .selected {
+    color: @gray7;
+    font-weight: bold;
+  }
+}
+
+.contentBox {
+  padding: 11px 0px 5px 0px;
+  // border-bottom: 1px solid #ECEEEE;
+  margin-bottom: 9px;
+
+  &:last-child {
+    border-bottom: 0px;
+    margin-bottom: 0px;
+  }
+}
+
+.secondBox {
+  width: 68px;
+  height: 110px;
+  padding-bottom: 15px;
+  display: inline-block;
+}
+
+.boxPadding {
+  margin-right: 25px;
+}
+
+.secondBoxImg {
+  width: 68px;
+  height: 68px;
+  padding-bottom: 10px;
+}
+
+.secondBoxText {
+  font-size: 12px;
+  font-weight: 400;
+  color: rgba(74, 74, 74, 1);
+  line-height: 17px;
+  text-align: center;
+  display: inline-block;
+  white-space: nowrap;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.flex {}
+
+
+
+.secondBoxs{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  .secondBoxsBoxs{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 85px;
+   .secondBoxsBoxsImg{
+     width: 40px;
+     height: 40px;
+     margin-bottom: 10px;
+   }
+   .secondBoxsBoxsTitle{
+    height: 17px;
+    font-size: 12px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #999999;
+    line-height: 17px;
+   }
+  }
+}
+.secondBoxs:after{
+  content: '';
+  width: 85px;
+}
